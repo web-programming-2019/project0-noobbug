@@ -1,0 +1,21 @@
+$color:green;//全局变量
+$width:200px;//全局变量
+$height:200px;//全局变量
+$height2:200px;//全局变量
+body {
+    background-color:$color;//调用全局变量
+}
+div {
+    $color:yellow;//定义局部变量，全局变量$color的影子
+    .div {
+    background-color:$color;//调用局部变量
+    width:$width;//调用全局变量
+    height:$height;//调用全局变量
+    }
+}
+.box {
+    font: {
+     size: 12px;
+     weight: bold;
+    }  
+  }
